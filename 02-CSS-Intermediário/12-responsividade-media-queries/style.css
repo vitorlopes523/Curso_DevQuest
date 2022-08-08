@@ -41,3 +41,17 @@ main p {
 .image img {
   width: 100%;
 }
+
+@media (max-width: 576px) {
+  .cabecalho {
+    text-align: center;
+  }
+
+  .cabecalho nav {
+    float: none;
+  }
+
+  .cabecalho nav li {
+    display: block;
+  }
+}
