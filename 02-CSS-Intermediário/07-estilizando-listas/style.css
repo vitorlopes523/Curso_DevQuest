@@ -1,0 +1,21 @@
+ul {
+  /* list-style-image: url('icone\ \(1\).png'); */
+  background-color: rgb(122, 122, 31);
+  list-style: square inside url('icone\ \(1\).png');
+}
+
+ul li {
+  border : 1px solid black;
+  padding: 20px;
+}
+
+ol {
+  /* list-style-image: url('icone\ \(1\).png'); */
+  background-color: blueviolet;
+  list-style: square inside url('icone\ \(1\).png');
+}
+
+ol li {
+  border : 1px solid black;
+  padding: 20px;
+}
