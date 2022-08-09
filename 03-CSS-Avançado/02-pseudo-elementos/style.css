@@ -1,0 +1,20 @@
+.first-latter::first-letter {
+  color: greenyellow;
+}
+
+.first-line::first-line {
+  color: rebeccapurple;
+}
+
+li::marker {
+  color: brown;
+  font-size: 60px;
+}
+
+h2::before {
+  content: url('img/favicon.ico');
+}
+
+li::after {
+  content: ' DE COMPRA';
+}
