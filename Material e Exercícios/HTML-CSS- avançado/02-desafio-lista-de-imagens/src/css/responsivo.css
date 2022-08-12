@@ -1,0 +1,15 @@
+@media(max-width: 1030px) {
+  .pinturas {
+    max-width: 550px;
+    margin: 30px 0;
+    gap: 0;
+  }
+}
+
+/* @media(max-width: 1030px) {
+  .pinturas {
+    display: flex;
+    flex-direction: column;
+  }
+
+} */
