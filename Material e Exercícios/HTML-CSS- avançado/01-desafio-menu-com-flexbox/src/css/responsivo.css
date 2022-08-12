@@ -19,6 +19,7 @@
   }
 
   ul.menu li a {
+    margin-left: 0;
     padding: 17px 40px;
     font-size: 40px;
   }
