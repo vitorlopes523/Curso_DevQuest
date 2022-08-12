@@ -1,0 +1,22 @@
+.sec-imagens {
+  display: flex;
+  justify-content: space-around;
+}
+
+.imagens {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 45px 20px;
+}
+
+.imagens li img {
+  width: 235px;
+  height: 330px;
+}
+
+/* .imagens img {
+  width: 235px;
+  height: 330px;
+  margin: 130px 20px;
+} */

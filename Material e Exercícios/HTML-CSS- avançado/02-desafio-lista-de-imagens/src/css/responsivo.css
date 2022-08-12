@@ -1,0 +1,7 @@
+@media(min-width: 600px) {
+  .imagens li img {
+    width: 235px;
+    height: 330px;
+    margin: 120px 20px;
+  }
+}
