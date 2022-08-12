@@ -1,0 +1,31 @@
+@media(max-width: 780px) {
+  header.cabecalho {
+    flex-direction: column;
+  }
+
+  ul.menu {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1.logo {
+    margin-bottom: 100px;
+    font-size: 40px;
+  }
+
+  ul.menu li{
+    margin-bottom: 50px;
+  }
+
+  ul.menu li a {
+    padding: 17px 40px;
+    font-size: 40px;
+  }
+
+  ul.menu li a.btn {
+    font-size: 18px;
+    padding: 15px 22px;
+  }
+
+}
