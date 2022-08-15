@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2? família=Outfit:wght@300;400;600&display=swap');
+
+body {
+  background-color: var(--neutral-dark);
+  font-family: 'Outfit', sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.nft-card {
+  max-width: 350px;
+  background-color: var(--neutral-medium);
+  border-radius: 15px;
+  padding: 25px;
+}
+
+.nft-card .image-link .image {
+  width: 100%;
+  border-radius: 7px;
+}
+
+.nft-card .title-link .title {
+  font-size: 22px;
+  color: #ffffff;
+  margin: 25px 0 20px;
+}
+
+.nft-card .about {
+  color: var(--primary-soft);
+  font-size: 18px;
+  font-weight: 300px;
+  line-height: 25px;
+  margin-bottom: 23px;
+}
+
+.nft-card .info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 23px;
+}
+
+.nft-card .info .price {
+  color: var(--primary-medium);
+  display: flex;
+}
+
+.nft-card .info .price::before {
+  content: '';
+  background: url('../imagens/icon-ethereum.svg') no-repeat center;
+  width: 11px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.nft-card .info .days-left {
+  color: var(--primary-soft);
+  display: flex;
+}
+
+.nft-card .info .days-left::before {
+  content: '';
+  background: url('../imagens/icon-clock.svg') no-repeat center;
+  width: 15px;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.nft-card .creator {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid var(--neutral-soft);
+  padding-top: 15px;
+}
+
+.nft-card .creator .avatar {
+  max-width: 35px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.nft-card .creator .text {
+  color: var(--primary-soft);
+}
+
+.nft-card .creator .text .nome {
+  color: #ffffff;
+}
+
