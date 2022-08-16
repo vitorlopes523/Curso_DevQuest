@@ -2,22 +2,6 @@
 
 Esta é uma solução para o desafio [NFT de componentes do cartão de visualização no Frontend Mentor](https://www.frontendmentor.io/challenges/nft-preview-card-component-component-SbdUL_w0U). Os desafios do Frontend Mentor ajudam a melhorar suas habilidades de codificação construindo projetos realistas. 
 
-## Tabela de conteúdos
-
-- [Visão geral](#overview)
-  - [O desafio](#the-desafio)
-  - -[Captura de tela](#screenshot)
-  - [Links](#links)
-- [Meu processo](#my-processo)
-  - [Construído com](#built-com)
-  - [O que eu aprendi](#what-eu aprendi)
-  - [Desenvolvimento contínuo](#continued-desenvolvimento)
-  - [Recursos úteis](#useful-recursos)
-- [Autor](#author)
-- [Reconhecimentos](#acknowledgments)
-
-**Nota: Exclua esta nota e atualize a tabela de conteúdos com base nas seções que você guarda.**
-
 ## Visão geral
 
 ### O desafio
@@ -28,21 +12,12 @@ Os usuários devem ser capazes de:
 - Ver estados hover para elementos interativos
 
 ### Captura de tela
+[<img src="src/imagens/Animação.gif" alt="gif da tela inicial do projeto NFT de componentes do cartão de visualização">]
 
-! [](./captura de tela.jpg)
-
-Adicione uma captura de tela da sua solução. A maneira mais fácil de fazer isso é usar o Firefox para visualizar seu projeto, clicar com o botão direito do mouse na página e selecionar "Tirar uma captura de tela". Você pode escolher uma captura de tela de altura total ou uma cropped com base no tempo que a página tem. Se for muito longo, talvez seja melhor cortá-lo.
-
-Alternativamente, você pode usar uma ferramenta como [FireShot](https://getfireshot.com/) para tirar a captura de tela. FireShot tem uma opção gratuita, então você não precisa comprá-lo. 
-
-Em seguida, corte/otimize/edite sua imagem como quiser, adicione-a ao seu projeto e atualize o caminho do arquivo na imagem acima.
-
-**Nota: Exclua esta nota e os parágrafos acima quando adicionar sua captura de tela. Se você preferir não adicionar uma captura de tela, sinta-se livre para remover toda esta seção.**
 
 ### Links
 
 - URL da solução: [Adicionar URL de solução aqui](https://your-solução-url.com)
-- URL do site ao vivo: [Adicionar URL ao vivo aqui](https://your-live-site-url.com)
 
 ## Meu processo
 
@@ -51,61 +26,53 @@ Em seguida, corte/otimize/edite sua imagem como quiser, adicione-a ao seu projet
 - Marcação semântica HTML5
 - Propriedades personalizadas CSS
 - Flexbox
-- Grade CSS
-- Fluxo de trabalho móvel
-- [React](https://reactjs.org/) - Biblioteca JS
-- [Next.js](https://nextjs.org/) - Estrutura de reação
-- [Componentes estilizados](https://styled-components.com/) - Para estilos
-
-**Nota: Estes são apenas exemplos. Exclua esta nota e substitua a lista acima com suas próprias escolhas**
 
 ### O que eu aprendi
 
-Use esta seção para recapitular alguns de seus principais aprendizados enquanto trabalha através deste projeto. Escrevê-las e fornecer amostras de código de áreas que você deseja destacar é uma ótima maneira de reforçar seu próprio conhecimento.
+Um grande desafio que encontrei nesse projeto foi na estilização, para colocar como efeito hover uma cor de fundo e um icon em uma imagem, foi bastante trabalhoso, mas com a ajuda de terceiros consegui fazer o que era esperado, com certeza esse foi meu maior aprendizado nesse projeto.
 
-Para ver como você pode adicionar trechos de código, veja abaixo:
-
-'''html
-<h1>Algum código HTML do que me orgulho</h1>
-```
 ''css
-.proud-of-this-css {
-  cor: mamãowhip;
+.nft-card .image-link::before {
+  content: '';
+  background-color: var(--primary-medium);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
 }
-```
-''js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+
+.nft-card .image-link::after {
+  content: '';
+  background: url('../imagens/icon-view.svg') no-repeat center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.nft-card .image-link:hover::before {
+  opacity: 0.4;
+}
+
+.nft-card .image-link:hover::after {
+  opacity: 1;
 }
 ```
 
-Se você quiser mais ajuda com a escrita de marcação, recomendamos verificar [O Guia de Markdown](https://www.markdownguide.org/) para saber mais.
-
-**Nota: Exclua esta nota e o conteúdo dentro desta seção e substitua por seus próprios aprendizados.**
 
 ### Desenvolvimento contínuo
 
-Use esta seção para delinear áreas em que você deseja continuar focando em projetos futuros. Estes podem ser conceitos que você ainda não está completamente confortável ou técnicas que você achou úteis que você quer refinar e aperfeiçoar.
+Estou estudando a bastante HTML e CSS, ainda não tenho muito conhecimento em JavaScrip e React, mas pretendo estudar os mesmos para aplicar suas diretrizes em projetos futuros.
 
-**Nota: Exclua esta nota e o conteúdo dentro desta seção e substitua-se por seus próprios planos para desenvolvimento contínuo.**
-
-### Recursos úteis
-
-- [Exemplo recurso 1](https://www.example.com) - Isso me ajudou pela razão XYZ. Eu realmente gostei deste padrão e vou usá-lo daqui para frente.
-- [Exemplo recurso 2](https://www.example.com) - Este é um artigo incrível que me ajudou a finalmente entender xyz. Eu recomendaria para qualquer um que ainda aprenda esse conceito.
-
-**Nota: Exclua esta nota e substitua a lista acima por recursos que o ajudaram durante o desafio. Isso pode ser útil para quem ver sua solução ou para si mesmo quando você olhar para trás neste projeto no futuro.**
 
 ## Autor
 
-- Site - [Adicione seu nome aqui](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Nota: Exclua esta nota e adicione/remova/edite linhas acima com base em quais links você gostaria de compartilhar.**
+- Site - [https://vitorlopes523.github.io/MaratonaExplore2/]
+- Frontend Mentor - [@vitorlopes523](https://www.frontendmentor.io/profile/vitorlopes523)
 
 ## Reconhecimentos
 
-É aqui que você pode dar uma dica de chapéu para quem te ajudou neste projeto. Talvez você tenha trabalhado em uma equipe ou se inspirou na solução de outra pessoa. Este é o lugar perfeito para dar-lhes algum crédito.
-
-**Nota: Exclua esta nota e edite o conteúdo desta seção conforme necessário. Se você completou este desafio sozinho, sinta-se livre para excluir esta seção inteiramente.**
+Os irmãos Ricardo e Roberto da Guilda Dev em Dobro, e donos do curso de programação DevQuest na qual eu faço parte, foram grandes aliados na construção desse projeto, auxiliando por meio de dicas e correções de suma importância, agradeço a eles pela ajuda!.
+[https://www.instagram.com/devemdobro/]
