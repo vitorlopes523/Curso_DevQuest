@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+/* font-family: 'Fraunces', serif; */
+
+:root {
+  --bg-color: hsl(30, 38%, 92%);
+  --principal-color: hsl(158, 36%, 37%);
+  --text-color: hsl(228, 12%, 48%);
+  --cor-hover: hsl(212, 21%, 14%);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--bg-color);
+}
+.container-card {
+  display: flex;
+  max-width: 600px;
+  height: 450px;
+
+  font-family: 'Montserrat', sans-serif;
+  line-height: 23px;
+}
+
+.container-card .imagens {
+  width: 50%;
+  background-color: #ffffff;
+}
+
+.container-card .imagens img {
+  width: 100%;
+  border-radius: 10px 0 0 10px;
+}
+
+.container-card .conteudo-card {
+  width: 50%;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius:  0 10px 10px 0;
+}
+.container-card .conteudo-card .tipo-produdo {
+  margin-bottom: 20px;
+  color: var(--text-color);
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+
+  .container-card .conteudo-card .titulo {
+    font-family: 'Fraunces', serif;
+    margin-bottom: 25px;
+    line-height: 30px;
+  }
+
+  .container-card .conteudo-card .descricao {
+    font-size: 14px;
+    margin-bottom: 35px;
+    color: var(--text-color);
+  }
+
+  .container-card .conteudo-card .preco {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 77%;
+  }
+
+  .container-card .conteudo-card .preco .preco-novo {
+    font-family: 'Fraunces', serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--principal-color);
+  }
+
+  .container-card .conteudo-card .preco .preco-antigo {
+    font-size: 12px;
+    text-decoration: line-through;
+    color: var(--text-color);
+  }
+
+  .container-card .conteudo-card .btn-card {
+    font-size: 14px;
+    font-weight: 700;
+    width: 100%;
+    padding: 14px;
+    background-color: var(--principal-color);
+    color: #ffffff;
+    border-radius: 10px;
+    border: none;
+    word-spacing: 2px;
+  }
+
+  .container-card .conteudo-card .btn-card:hover {
+    background-color: var(--cor-hover);
+  }
+
+  .container-card .conteudo-card .btn-card .icon {
+    width: 16px;
+    margin-right: 8px;
+  }
+
+  @media(max-width:634px) {
+    main {
+      display: block;
+    }
+
+    .container-card {
+      display: block;
+      max-width: 370px;
+      margin: 0px auto;
+      padding-top: 30px;
+      height: 80%;
+    }
+
+    .container-card .imagens {
+      width: 100%;
+    }
+
+    .container-card .conteudo-card {
+      width: 100%;
+    }
+
+  }
