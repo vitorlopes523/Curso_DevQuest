@@ -26,7 +26,7 @@ main {
 
 .container-card .imagens {
   width: 50%;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
 }
 
 .container-card .imagens img {
