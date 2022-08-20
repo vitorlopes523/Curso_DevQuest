@@ -12,15 +12,19 @@ body {
 }
 
 .main .logo img {
-  margin: 30px 0px 50px 80px;
-  width: 200px;
+  margin: 30px 0px 90px 73px;
+  max-width: 200px;
 }
 
 .main .container-principal {
   display: flex;
-  margin-left: 80px;
+  margin-left: 73px;
   gap: 60px;
   color: #fff;
+}
+
+.main .container-principal img {
+  max-width: 709px;
 }
 
 .main .container-principal .container-text {
@@ -78,13 +82,63 @@ body {
   padding: 10px 13px;
 }
 
-
-
-
-
-
-
-
 footer .attribution { 
-  font-size: 11px; text-align: center; 
+  font-size: 11px; 
+  text-align: center; 
+  transition: 0.4s;
 }
+
+.attribution a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+
+@media (max-width:1242px) {
+  /* body {
+    border: 5px solid black;
+    display: block;
+    width: 100vw;
+  } */
+  .main {
+    background: url('../images/bg-mobile.svg') center center no-repeat;
+    background-size: contain;
+    border: 3px solid coral;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main .logo img {
+    margin: 30px 0px 90px 20px;
+    max-width: 200px;
+  }
+
+  .main .container-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 20px;
+    border: 1px solid yellow;
+  }
+
+  .main .container-principal img {
+    width: 100%;
+    max-width: 604px;
+    margin: 0 auto;
+  }
+
+  .main .container-principal .container-text {
+    width: 100%;
+    border: 1px solid red;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .main .social ul {
+    display: flex;
+    justify-content: center;
+    margin: 70px 0 20px 0;
+    
+  }
+}
+
