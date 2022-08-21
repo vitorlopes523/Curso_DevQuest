@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root {
+  --primary-color-bg: hsl(212, 45%, 89%);
+  --primary-color-title: hsl(218, 44%, 22%);
+  --primary-color-text: hsl(220, 15%, 55%);
+  --primary-color-container: hsl(0, 0%, 100%);
+}
+
+body {
+  height: 100vh;
+  font-family: 'Outfit', sans-serif;
+  font-size: 15px;
+  align-items: center;
+  background-color: var(--primary-color-bg);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main {
+  background-color: var(--primary-color-container);
+  border-radius: 20px;
+  width: 322px;
+}
+
+.main .conatiner-qr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  text-align: center;
+}
+
+.main .conatiner-qr img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 23px;
+}
+
+.main .conatiner-qr h2 {
+  color: var(--primary-color-title);
+  margin-bottom: 15px;
+}
+
+.main .conatiner-qr p {
+  color: var(--primary-color-text);
+  padding: 0 20px 23px 20px;
+}
+
+.attribution { 
+  margin-top: 10px;
+  font-size: 11px; 
+  text-align: center; 
+}
+
+.attribution a {
+  transition: 0.4s;
+}
+
+.attribution a:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
