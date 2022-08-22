@@ -7,7 +7,7 @@ body {
 }
 
 .main {
-  background: url('../images/bg-desktop.svg') center center no-repeat;
+  background: url('../images/bg-desktop.svg') left top no-repeat;
   background-size: contain;
 }
 
@@ -27,21 +27,22 @@ body {
   max-width: 709px;
 }
 
-.main .container-principal .container-text {
+.main .container-principal .container-content {
   margin: 43px 50px 0 0;
 }
 
-.main .container-principal .container-text h1 {
+.main .container-principal .container-content h1 {
   font-family: var(--font-title);
   font-size: 40px;
   margin-bottom: 22px;
 }
 
-.main .container-principal .container-text p {
+.main .container-principal .container-content p {
   line-height: 26px;
   margin-bottom: 26px;
 }
-.main .container-principal .container-text .btn {
+
+.main .container-principal .container-content .btn {
   font-size: 18px;
   padding: 16px 60px;
   border-radius: 50px;
@@ -49,8 +50,15 @@ body {
   transition: 0.4s;
 }
 
-.main .container-principal .container-text .btn:hover {
+.main .container-principal .container-content .btn:hover {
   background-color: var(--primary-color-soft);
+}
+
+.main .container-principal .container-content .btn a {
+  color: var(--primary-color-main);
+}
+
+.main .container-principal .container-content .btn:hover a {
   color: #fff;
 }
 
@@ -82,6 +90,10 @@ body {
   padding: 10px 13px;
 }
 
+.main .social ul li a .fa-instagram {
+  padding: 10px 11px;
+}
+
 footer .attribution { 
   font-size: 11px; 
   text-align: center; 
@@ -93,52 +105,4 @@ footer .attribution {
   text-decoration: underline;
 }
 
-
-@media (max-width:1242px) {
-  /* body {
-    border: 5px solid black;
-    display: block;
-    width: 100vw;
-  } */
-  .main {
-    background: url('../images/bg-mobile.svg') center center no-repeat;
-    background-size: contain;
-    border: 3px solid coral;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .main .logo img {
-    margin: 30px 0px 90px 20px;
-    max-width: 200px;
-  }
-
-  .main .container-principal {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 20px;
-    border: 1px solid yellow;
-  }
-
-  .main .container-principal img {
-    width: 100%;
-    max-width: 604px;
-    margin: 0 auto;
-  }
-
-  .main .container-principal .container-text {
-    width: 100%;
-    border: 1px solid red;
-    text-align: center;
-    margin: 0 auto;
-  }
-
-  .main .social ul {
-    display: flex;
-    justify-content: center;
-    margin: 70px 0 20px 0;
-    
-  }
-}
 
