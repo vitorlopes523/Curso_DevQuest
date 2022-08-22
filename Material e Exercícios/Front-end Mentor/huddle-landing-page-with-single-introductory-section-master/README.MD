@@ -1,6 +1,6 @@
-# Frontend Mentor - Solução de componente de código QR
+# Frontend Mentor - Página de aterrissagem em huddle com solução de seção introdutória única
 
-Esta é uma solução para o desafio [componente de código QR no Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H). Os desafios do Frontend Mentor ajudam a melhorar suas habilidades de codificação construindo projetos realistas. 
+Esta é uma solução para a página de aterrissagem [Huddle landing page with single introductory section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0). Os desafios do Frontend Mentor ajudam a melhorar suas habilidades de codificação construindo projetos realistas. 
 
 ## Visão geral
 
@@ -9,15 +9,21 @@ Esta é uma solução para o desafio [componente de código QR no Frontend Mento
 Os usuários devem ser capazes de:
 
 - Exibir o layout ideal para a página, dependendo do tamanho da tela do dispositivo
+- Ver os estados do hover para todos os elementos interativos na página
 
 ### Captura de tela
 
-<img src="./src/images/qrcode.gif">
+- Desktop
+<img src="./src/images/Animação.gif">
 
+-Mobile
+
+<img src="./src/images/mobile.gif">
 
 ### Links
 
-- URL da solução: [https://vitorlopes523.github.io/qr-code-component-main/]
+- URL da solução: [https://github.com/vitorlopes523/huddle-landing-page-with-single-introductory-section-master](https://your-solução-url.com)
+
 
 ## Meu processo
 
@@ -29,11 +35,14 @@ Os usuários devem ser capazes de:
 
 ### O que eu aprendi
 
+- Detalhes sobre background, algumas de suas propriedades.
 - Largura e altura de elementos dentro de outros elementos.
 
 ### Dificuldades
 
+- Posicionar de maneira igual a do estilo a imagem de fundo.
 - Pequenas configurações de posicionamento e tamanho de elementos.
+- Deixar a imagem de ilustração responsiva.
 - Detalhes de configuração css pela ausência do figma. 
 
 ### Desenvolvimento contínuo

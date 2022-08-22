@@ -1,0 +1,108 @@
+html {
+  font-family: var(--font-body);
+}
+
+body {
+  background-color: var(--primary-color-main);
+}
+
+.main {
+  background: url('../images/bg-desktop.svg') left top no-repeat;
+  background-size: contain;
+}
+
+.main .logo img {
+  margin: 30px 0px 90px 73px;
+  max-width: 200px;
+}
+
+.main .container-principal {
+  display: flex;
+  margin-left: 73px;
+  gap: 60px;
+  color: #fff;
+}
+
+.main .container-principal img {
+  max-width: 709px;
+}
+
+.main .container-principal .container-content {
+  margin: 43px 50px 0 0;
+}
+
+.main .container-principal .container-content h1 {
+  font-family: var(--font-title);
+  font-size: 40px;
+  margin-bottom: 22px;
+}
+
+.main .container-principal .container-content p {
+  line-height: 26px;
+  margin-bottom: 26px;
+}
+
+.main .container-principal .container-content .btn {
+  font-size: 18px;
+  padding: 16px 60px;
+  border-radius: 50px;
+  color: var(--primary-color-main);
+  transition: 0.4s;
+}
+
+.main .container-principal .container-content .btn:hover {
+  background-color: var(--primary-color-soft);
+}
+
+.main .container-principal .container-content .btn a {
+  color: var(--primary-color-main);
+}
+
+.main .container-principal .container-content .btn:hover a {
+  color: #fff;
+}
+
+.main .social ul {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 70px;
+}
+
+.main .social ul li{
+  margin: 7px;
+}
+
+.main .social ul li a i {
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  padding: 10px;
+  transition: 0.4s;
+}
+
+.main .social ul li a i:hover{
+  color: var(--primary-color-soft);
+  border: 1px solid var(--primary-color-soft);
+}
+
+
+.main .social ul li a .fa-facebook-f{
+  padding: 10px 13px;
+}
+
+.main .social ul li a .fa-instagram {
+  padding: 10px 11px;
+}
+
+footer .attribution { 
+  font-size: 11px; 
+  text-align: center; 
+  transition: 0.4s;
+}
+
+.attribution a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+
