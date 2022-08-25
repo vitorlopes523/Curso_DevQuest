@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+  --bg-color: hsl(0, 0%, 95%);
+  --primary-color-sedans: hsl(31, 77%, 52%);
+  --primary-color-suvs: hsl(184, 100%, 22%);
+  --primary-color-luxury: hsl(179, 100%, 13%);
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sedans, .suvs, .luxury {
+  width: 306px;
+  height: 499px;
+}
+
+.sedans {
+  background-color: var(--primary-color-sedans);
+}
+
+.suvs {
+  background-color: var(--primary-color-suvs);
+}
+
+.luxury {
+  background-color: var(--primary-color-luxury);
+}
