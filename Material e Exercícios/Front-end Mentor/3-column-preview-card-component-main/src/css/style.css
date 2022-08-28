@@ -7,24 +7,28 @@
   --primary-color-luxury: hsl(179, 100%, 13%);
 }
 
+
 body {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+  color: var(--bg-color);
+  background-color: var(--bg-color);
 }
 
 .container {
   height: 100%;
   width: 100%;
-  background-color: var(--bg-color);
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.sedans, .suvs, .luxury {
+.marcas-carro {
   width: 306px;
-  height: 499px;
+  height: 500px;
 }
 
 .sedans {
@@ -37,4 +41,72 @@ body {
 
 .luxury {
   background-color: var(--primary-color-luxury);
+}
+
+.conteudo {
+  margin: 50px;
+}
+
+.marcas-carro .conteudo .title {
+  text-transform: uppercase;
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 40px;
+  margin: 30px 0 27px 0;
+}
+
+.marcas-carro .conteudo .descricao {
+  line-height: 23px;
+  margin-bottom: 90px;
+}
+
+.marcas-carro .conteudo .btn{
+  padding: 12px 30px;
+  font-size: 16px;
+  border-radius: 50px;
+  border: 3px solid var(--bg-color);
+  cursor: pointer;
+}
+
+.marcas-carro .conteudo .btn:hover a {
+  transition: 0.4s;
+  color: #fff;
+}
+.sedans .conteudo .btn a {
+  color: var(--primary-color-sedans);
+}
+
+.sedans .conteudo .btn:hover {
+  transition: 0.4s;
+  background-color: var(--primary-color-sedans);
+}
+
+.suvs .conteudo .btn a {
+  color: var(--primary-color-suvs);
+}
+
+.suvs .conteudo .btn:hover {
+  transition: 0.4s;
+  background-color: var(--primary-color-suvs);
+}
+
+.luxury .conteudo .btn a {
+  color: var(--primary-color-luxury);
+}
+
+.luxury .conteudo .btn:hover {
+  transition: 0.4s;
+  background-color: var(--primary-color-luxury);
+}
+
+@media(max-width: 745px) {
+  .container {
+    display: block;
+    padding: 20px 0;
+  }
+
+  .marcas-carro {
+   display: flex;
+   align-content: center;
+   margin: 0 auto;
+  }
 }
