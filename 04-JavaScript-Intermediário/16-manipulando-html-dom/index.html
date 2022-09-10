@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manipulando HTML - DOM</title>
+</head>
+<body>
+    <h1>Posts do Twitter</h1>
+
+    <article class="post">
+      <p><strong>Vitor Lopes</strong> <span>@vitor13 - 10 min</span></p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quos eveniet molestias soluta. Quis aperiam tempora eaque unde mollitia consequatur delectus iusto repellendus ipsum at vel fugit, sapiente atque facere.
+      </p>
+
+      <br>
+
+      <div class="comentarios">
+          <h3>Comentários:</h3>
+
+          <input name="novo-comentario" type="text" placeholder="Digite seu comentário">
+
+          <button onclick="adicionarComentario()">Adicionar comentários</button>
+
+          <br>
+
+          <div id="novos-comentarios"></div>
+      </div>
+    </article>
+
+    <script src="index.js"></script>
+</body>
+</html>
