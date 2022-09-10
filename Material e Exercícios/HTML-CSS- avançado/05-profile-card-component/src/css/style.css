@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2? família=Kumbh+Sans:wght@400;700&display=swap');
+
+html {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight: 400;
+}
+
+body {
+  height: 100vh;
+  background: var(--bg-color) url('../images/bg-pattern-bottom.svg');
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  background-color: var(--container-color);
+  width: 350px;
+  height: 375px;
+  border-radius: 13px;
+}
+
+.main-container .bg-container {
+  background: url('../images/bg-pattern-card.svg') no-repeat;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 13px;
+}
+
+.main-container .bg-container .imagem {
+  margin-top: 80px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  margin-bottom: 20px;
+}
+
+.main-container .bg-container .nome-idade {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.main-container .bg-container .nome-idade .usuario {
+  color: var(--title-color);
+  margin-right: 10px;
+  font-weight: 700;
+}
+
+.main-container .bg-container .nome-idade .idade {
+  color: var(--text-color);
+}
+
+.main-container .bg-container .cidade {
+  width: 100%;
+  text-align: center;
+  color: var(--text-color);
+  font-size: 14px;
+  border-bottom: 1px solid hsla(0, 0%, 59%, 0.288);
+  padding-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.main-container .bg-container .estatistica {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.main-container .bg-container .estatistica .social-views {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.main-container .bg-container .estatistica .social-views .views {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--title-color);
+  margin-bottom: 5px;
+}
+
+.texto {
+  color: var(--text-color);
+  font-size: 10px;
+  letter-spacing: 1px;
+}
