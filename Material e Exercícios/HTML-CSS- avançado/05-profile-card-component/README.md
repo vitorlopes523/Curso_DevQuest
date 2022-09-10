@@ -17,9 +17,8 @@ Os usuários devem ser capazes de:
 
 ### Links
 
-- URL da solução: [https://vitorlopes523.github.io/qr-code-component-main/]
-
-## Meu processo
+- URL da solução: [https://github.com/vitorlopes523/profile-card-component]
+- Link do site funcionando: [https://vitorlopes523.github.io/profile-card-component/]
 
 ### Construído com
 
