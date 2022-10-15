@@ -9,6 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/rolagem.css">
+
     <title>Mini Portfólio</title>
   </head>
   <body>
@@ -21,32 +25,35 @@
 
       <div class="conteudo">
         <ul class="abas">
-          <li class="aba">
+          <li class="aba selecionado" id="sobre-mim">
             <img src="./src/imagens/sobre.gif" alt="ícone de sobre mim" />
           </li>
-          <li class="aba">
+          <li class="aba" id="minhas-redes">
             <img src="./src/imagens/coracao.gif" alt="ícone de redes sociais" />
           </li>
         </ul>
 
         <div class="informacoes-abas">
-          <div class="informacao">
+          <div class="informacao selecionado" id="informacao-sobre-mim">
             <h3 class="sub-titulo">Sobre</h3>
 
             <div class="descricao">
               <p>Oi! meu nome é Vitor Lopes de Matos, seja bem-vindo(a)!</p>
 
               <p>
-                Sou uma pessoa apaixonada pela programação desde que eu tinha 15
-                anos. Sempre tive o sonho de trabalhar com programação e
-                atualmente comecei a colocar esse sonho em prática estudando
-                <span>HTML, CSS e JavaScript</span>. Gosto muito de café (até demais), e meus
-                principais hobbies são jogar MMO RPG, ver animes e séries.
+                Sou um estudante de programação de desenvolvimento
+                frontend e tenho o objetivo de trabalhar na área. Atualmente
+                venho estudando algumas tecnologias como <span>HTML, CSS,
+                 JavaScript e React</span>. Passei a gostar muito de programação
+                e sempre quero estar evoluindo e agregando mais conheciementos.
+                Meus principais hobbies são praticar atividades físicas, jogar futebol,
+                sociais com amigos, ver animes e séries.
+                
               </p>
             </div>
           </div>
 
-          <div class="informacao">
+          <div class="informacao" id="informacao-minhas-redes">
             <h3 class="sub-titulo">Minhas redes</h3>
 
             <ul class="redes-sociais">
@@ -65,5 +72,7 @@
         </div>
       </div>
     </main>
+
+    <script src="./src/js/index.js"></script>
   </body>
 </html>

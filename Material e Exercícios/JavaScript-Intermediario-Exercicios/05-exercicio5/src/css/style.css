@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2? família=Roboto:wght@300;400;700&display=swap');
+
+body {
+  height: 100vh;
+  background-color: #E5E5E5;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.main {
+  height: 100vh;
+  padding: 20px;
+  position: relative;
+}
+
+.main .seta img {
+  width: 56px;
+  height: 78px;
+  cursor: pointer;
+  z-index: 1;
+  position: absolute;
+  top: 650px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.main .seta img:hover {
+  opacity: 0.8;
+}
+
+.main .seta-voltar img {
+  left: 70px;
+}
+
+.main .seta-avancar img {
+  right: 70px;
+}
+
+.main .images {
+  height: 100vh;
+  position: relative;
+}
+
+.main .images li {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+}
+
+.main .images li.selecionado {
+  opacity: 1;
+  z-index: 1;
+}
+
+.main .images li .informacoes {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.main .images li .informacoes img {
+  width: 100%;
+  height: 100%;
+}
+
+.main .images li .informacoes .info-images {
+  background-color: #fff;
+  width: 620px;
+  height: 700px;
+  position: absolute;
+  left: 0;
+  margin-left: 180px;
+  margin-top: 186px;
+  border-radius: 10px;
+  padding: 60px 65px;
+}
+
+.main .images li .informacoes .info-images .title {
+  margin-bottom: 80px;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 58px;
+}
+
+.main .images li .informacoes .info-images p {
+  font-size: 25px;
+  line-height: 35px;
+  text-align: justify;
+  margin-bottom: 50px;
+}
+
+.main .images li .informacoes .info-images a {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 35px;
+}
+
+
+

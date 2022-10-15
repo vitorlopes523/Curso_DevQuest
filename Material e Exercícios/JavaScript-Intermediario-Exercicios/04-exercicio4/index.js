@@ -19,5 +19,52 @@
 				Passo 6 - Se o input estiver vazio, removemos a classe campo-preenchido.
 */
 
-let inputs = document.querySelector(".input-text")
-console.log(inputs)
+// let inputs = document.querySelectorAll('.input-text')
+
+// let inputUm = inputs[0].addEventListener('change', () => {
+
+//   let inputValidacao = inputs[0].value
+//   console.log(inputValidacao)
+  
+//   if (inputValidacao !== ''){
+//     inputs[0].classList.add('border-validacao')
+//   }else {
+//     inputs[0].classList.remove('border-validacao')
+//   }
+
+// })
+
+// let inputDois = inputs[1].addEventListener('change', () => {
+
+//   let inputValidacao = inputs[1].value
+//   console.log(inputValidacao)
+  
+//   if (inputValidacao !== ''){
+//     inputs[1].classList.add('border-validacao')
+//   }else {
+//     inputs[1].classList.remove('border-validacao')
+//   }
+
+// })
+
+
+// Passo 1 - Pegar todos os inputs que tenham a mesma classe com o querySelectorAll.
+// Passo 2 - Dar um jeito de percorrer cada input - vamos utilizar o laço de repetição forEach para percorrer cada input.
+// Passo 3 - Quando o usuário preencher algo, precisamos disparar a ação para verificar se o input foi alterado.
+// Passo 4 - Realizar a verificação se o valor do input é diferente de vazio.
+// Passo 5 - Se o input tiver alguma informação, adicionamos a classe de campo-preenchido que vai dar a borda verde ao input.
+// Passo 6 - Se o input estiver vazio, removemos a classe campo-preenchido.
+
+const inputText = document.querySelectorAll(".input-text")
+
+inputText.forEach(input => {
+    input.addEventListener('change', () => {
+        if (input.value !== '') {
+            input.classList.add('border-validacao')
+        } else {
+            input.classList.remove('border-validacao')
+        }
+    });
+});
+
+
