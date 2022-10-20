@@ -1,107 +1,120 @@
-@import url('https://fonts.googleapis.com/css2? família=Roboto:wght@300;400;700&display=swap');
-
 body {
   height: 100vh;
-  background-color: #E5E5E5;
-  font-family: 'Roboto', sans-serif;
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center;
-  align-items: center; */
 }
 
-.main {
-  height: 100vh;
-  padding: 20px;
+.slider {
+  width: 100%;
+  height: 100%;
   position: relative;
 }
 
-.main .seta img {
-  width: 56px;
-  height: 78px;
-  cursor: pointer;
-  z-index: 1;
+.slider .seta {
   position: absolute;
-  top: 650px;
-  transition: opacity 0.3s ease-in-out;
+  top: 45%;
+  z-index: 2;
 }
 
-.main .seta img:hover {
+.slider .seta img {
+  width: 49px;
+  transition: 0.4 ease-in-out;
+}
+
+.slider .seta img:hover {
   opacity: 0.8;
 }
 
-.main .seta-voltar img {
-  left: 70px;
+.slider .seta.seta-voltar {
+  left: 40px;
+  transform: rotateY(180deg);
 }
 
-.main .seta-avancar img {
-  right: 70px;
+.slider .seta.seta-avancar {
+  right: 40px;
 }
 
-.main .images {
-  height: 100vh;
+.nao-selecionavel {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.slider .imagens-slider {
+  height: 100%;
   position: relative;
 }
 
-.main .images li {
-  height: 100vh;
+.slider .imagens-slider .slide {
+  height: 100%;
   width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
-  flex-direction: column;
   align-items: center;
   position: absolute;
 }
 
-.main .images li.selecionado {
+.mostrar {
   opacity: 1;
   z-index: 1;
 }
 
-.main .images li .informacoes {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
+.slide.slide-1 {
+  background-image: url('../imagens/imagem.png');
 }
 
-.main .images li .informacoes img {
-  width: 100%;
-  height: 100%;
+.slide.slide-2 {
+  background-image: url('../imagens/imagem\ \(1\).png');
 }
 
-.main .images li .informacoes .info-images {
+.slide.slide-3 {
+  background-image: url('../imagens/imagem\ \(2\).png');
+}
+
+.slide.slide-4 {
+  background-image: url('../imagens/imagem\ \(3\).png');
+}
+
+.slider .imagens-slider .slide .conteudo {
   background-color: #fff;
   width: 620px;
-  height: 700px;
-  position: absolute;
-  left: 0;
   margin-left: 180px;
-  margin-top: 186px;
+  padding: 65px 60px;
   border-radius: 10px;
-  padding: 60px 65px;
 }
 
-.main .images li .informacoes .info-images .title {
+.slider .imagens-slider .slide .conteudo .titulo {
   margin-bottom: 80px;
-  font-size: 50px;
+  font-size: 5rem;
   font-weight: 400;
-  line-height: 58px;
 }
 
-.main .images li .informacoes .info-images p {
-  font-size: 25px;
-  line-height: 35px;
-  text-align: justify;
+.slider .imagens-slider .slide .conteudo .texto {
+  font-size: 2.5rem;
+  font-weight: 300;
   margin-bottom: 50px;
+  text-align: justify;
 }
 
-.main .images li .informacoes .info-images a {
-  font-size: 30px;
+.slider .imagens-slider .slide .conteudo a {
+  font-size: 3rem;
   font-weight: 700;
-  line-height: 35px;
 }
 
+.conteudo .link-slide1 {
+  color: rgba(197, 0, 0, 1);
+}
+
+.conteudo .link-slide2 {
+  color: rgba(217, 221, 16, 1);
+  ;
+}
+
+.conteudo .link-slide3 {
+  color: rgba(166, 58, 23, 1);
+}
+
+.conteudo .link-slide4 {
+  color: rgba(16, 172, 221, 1);
+}
 
 
