@@ -5,99 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2? família=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
-
     <title>Exercício 6 - JS Intermediário - Acordeon</title>
 
-    <link rel="stylesheet" href="./src/css/reset.css">
-    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
   </head>
   <body>
-    <main class="container">
-      <img src="./src/imagens/ilustracao.png" alt="imagem de ilustração" class="ilustracao" />
+    <main>
+      <section class="acordeon">
+        <img
+          src="./src/imagens/ilustracao.png"
+          alt="ilustração boneco com vr"
+          class="ilustracao"
+        />
 
-      <div class="acordeon">
-        <h1 class="title">FAQ</h1>
+        <div class="conteudo">
+          <h1>FAQ</h1>
 
-        <ul class="conteudo">
-          <li class="perguntas">
-            <div class="pergunta-acordeon">
-              <h3 class="title-perguntas">Lorem ipsum dolor sit amet, consectetur ?</h3>
-              <div class="setas">
-                <a href="#" class="seta-fechada">
-                  <img
-                    src="./src/imagens/icone-seta-fechada.png"
-                    alt="seta fechada"
-                  />
-                </a>
-                <a href="#" class="seta-aberta">
-                  <img
-                    src="./src/imagens/icone-seta-aberta.png"
-                    alt="seta aberta"
-                  />
-                </a>
-              </div>
-            </div>
+          <ul class="items">
+            <li class="item">
+              <h2 class="pergunta">
+                Lorem ipsum dolor sit amet, consectetur ?
+              </h2>
 
-            <p class="texto">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-              quis egestas ex, a elementum est. Mauris auctor nunc quis erat.
-            </p>
-          </li>
+              <p class="resposta">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                quis egestas ex, a elementum est. Mauris auctor nunc quis erat.
+              </p>
+            </li>
 
-          <li class="perguntas">
-            <div class="pergunta-acordeon">
-              <h3 class="title-perguntas">Lorem ipsum dolor sit amet ?</h3>
-              <div class="setas">
-                <a href="#" class="seta-fechada">
-                  <img
-                    src="./src/imagens/icone-seta-fechada.png"
-                    alt="seta fechada"
-                  />
-                </a>
-                <a href="#" class="seta-aberta">
-                  <img
-                    src="./src/imagens/icone-seta-aberta.png"
-                    alt="seta aberta"
-                  />
-                </a>
-              </div>
-            </div>
+            <li class="item">
+              <h2 class="pergunta">Lorem ipsum dolor sit amet ?</h2>
 
-            <p class="texto">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-              quis egestas ex, a elementum est. Mauris auctor nunc quis erat.
-            </p>
-          </li>
+              <p class="resposta">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                quis egestas ex, a elementum est. Mauris auctor nunc quis erat.
+              </p>
+            </li>
 
-          <li class="perguntas">
-            <div class="pergunta-acordeon">
-              <h3 class="title-perguntas">Lorem ipsum dolor sit ?</h3>
-              <div class="setas">
-                <a href="#" class="seta-fechada">
-                  <img
-                    src="./src/imagens/icone-seta-fechada.png"
-                    alt="seta fechada"
-                  />
-                </a>
-                <a href="#" class="seta-aberta">
-                  <img
-                    src="./src/imagens/icone-seta-aberta.png"
-                    alt="seta aberta"
-                  />
-                </a>
-              </div>
-            </div>
+            <li class="item">
+              <h2 class="pergunta">Lorem ipsum dolor sit ?</h2>
 
-            <p class="texto">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-              quis egestas ex, a elementum est. Mauris auctor nunc quis erat.
-            </p>
-          </li>
-        </ul>
-      </div>
+              <p class="resposta">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                quis egestas ex, a elementum est. Mauris auctor nunc quis erat.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
+    <script src="./src/js/acordeon.js"></script>
   </body>
 </html>

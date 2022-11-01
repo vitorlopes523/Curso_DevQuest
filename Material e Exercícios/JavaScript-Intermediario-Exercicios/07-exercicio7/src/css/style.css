@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2? família=Roboto:wght@400;700;900&display=swap');
+
+body {
+  font-family:  'Roboto', sans-serif;;
+}
+
+main {
+  background-image: url('../img/fundo.png');
+  background-size: contain;
+  font-size: 15px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  min-height: 100vh;
+}
+
+.info-duvida {
+  width: 300px;
+}
+
+.info-duvida .title {
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 23px;
+  color: #fff;
+  margin-bottom: 11px;
+}
+
+.info-duvida .descricao {
+  font-weight: 400;
+  color: #fff;
+}
+
+.formulario {
+  background-color: #fff;
+  width: 340px;
+  height: 378px;
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs, textarea, .btn-enviar {
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.formulario .inputs {
+  margin-bottom: 15px;
+  height: 35px;
+}
+
+.formulario textarea {
+  height: 100px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.formulario .btn-enviar {
+  background-color: #3CCC87;
+  color: #fff;
+  margin-top: 11px;
+  height: 41px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.formulario .btn-enviar:hover {
+  background-color: #349767;
+  opacity: 0.8;
+}
