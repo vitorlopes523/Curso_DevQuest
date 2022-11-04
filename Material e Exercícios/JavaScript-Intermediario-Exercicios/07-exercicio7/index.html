@@ -4,16 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2? família=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"/>
+
     <title>Desafio -Formulário</title>
 
-    <link rel="stylesheet" href="./src/css/reset.css">
-    <link rel="stylesheet" href="./src/css/style.css">
-
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
   </head>
+
   <body>
     <main>
       <div class="info-duvida">
-        <h1 class="title">FICOU COM DÚVIDA? <br />NOS MANDE UMA MENSAGEM!</h1>
+        <h1 class="title">ficou com dúvida?<br />nos mande uma mensagem!
+        </h1>
 
         <p class="descricao">
           caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e
@@ -22,18 +29,40 @@
       </div>
 
       <form action="" method="get" class="formulario">
-        <input type="text" class="inputs" placeholder="Nome completo *" />
+        <div class="campos">
+          <input
+            type="text"
+            class="inputs elementos"
+            placeholder="Nome completo *"
+          />
+          <p class="mensagem-de-alerta">campo obrigatório</p>
+        </div>
 
-        <input type="email" class="inputs" id="" placeholder="Email *" />
+        <div class="campos">
+          <input type="email" class="inputs elementos" placeholder="Email *" />
+          <p class="mensagem-de-alerta">campo obrigatório</p>
+        </div>
 
-        <input type="tel" class="inputs" id="" placeholder="Telefone *" />
+        <div class="campos">
+          <input type="tel" class="inputs elementos" placeholder="Telefone *" />
+          <p class="mensagem-de-alerta">campo obrigatório</p>
+        </div>
 
-        <textarea id="" cols="30" rows="10" placeholder="Mensagem *"></textarea>
+        <div class="campos">
+          <textarea
+            id=""
+            cols="30"
+            rows="10"
+            class="elementos"
+            placeholder="Mensagem *"
+          ></textarea>
+          <p class="mensagem-de-alerta">campo obrigatório</p>
+        </div>
 
-        <p>*campos obrigatórios</p>
-
-        <input type="submit" class="btn-enviar" value="Enviar" />
+        <p class="aviso">*campos obrigatórios</p>
+        <input type="button" value="Enviar" class="btn-enviar" />
       </form>
     </main>
+    <script src="./src/js/index.js"></script>
   </body>
 </html>

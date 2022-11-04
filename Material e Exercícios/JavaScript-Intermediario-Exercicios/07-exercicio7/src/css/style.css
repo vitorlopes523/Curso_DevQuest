@@ -1,23 +1,20 @@
-@import url('https://fonts.googleapis.com/css2? família=Roboto:wght@400;700;900&display=swap');
-
 body {
-  font-family:  'Roboto', sans-serif;;
-}
-
-main {
   background-image: url('../img/fundo.png');
   background-size: contain;
+  font-family: 'Roboto', sans-serif;
   font-size: 15px;
 
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 60px;
   min-height: 100vh;
 }
 
-.info-duvida {
-  width: 300px;
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
 }
 
 .info-duvida .title {
@@ -26,11 +23,15 @@ main {
   line-height: 23px;
   color: #fff;
   margin-bottom: 11px;
+  text-transform: uppercase;
 }
 
 .info-duvida .descricao {
+  width: 300px;
   font-weight: 400;
   color: #fff;
+  text-align: justify;
+  line-height: 18px;
 }
 
 .formulario {
@@ -41,22 +42,42 @@ main {
   border-radius: 5px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .inputs, textarea, .btn-enviar {
   font-weight: 700;
   font-size: 15px;
+  width: 300px;
 }
 
-.formulario .inputs {
+.formulario div {
   margin-bottom: 15px;
-  height: 35px;
 }
 
-.formulario textarea {
+.formulario div .inputs {
+  height: 35px;
+  border-radius: 5px;
+}
+
+.formulario div textarea {
   height: 100px;
   border-radius: 5px;
-  margin-bottom: 5px;
+}
+
+.mensagem-de-alerta {
+  color: red;
+  font-size: 8px;
+  margin-bottom: -9px;
+  display: none;
+}
+
+.mostrar {
+  display: block;
+}
+
+.formulario .aviso {
+  margin: -10px 0 0 -8px;
 }
 
 .formulario .btn-enviar {
@@ -71,6 +92,29 @@ main {
 }
 
 .formulario .btn-enviar:hover {
-  background-color: #349767;
-  opacity: 0.8;
+  transform: scale(1);
+}
+
+.valido {
+  border: 2px solid rgba(0, 194, 43, 1);
+}
+
+.invalido {
+  border: 2px solid red;
+}
+
+@media(max-width: 748px) {
+  main {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .info-duvida .title {
+    text-align: center;
+  }
+
+  .info-duvida .descricao {
+    margin: 0 auto;
+  }
+
 }
