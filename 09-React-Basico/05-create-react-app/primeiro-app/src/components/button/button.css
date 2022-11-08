@@ -1,0 +1,11 @@
+.btn {
+  background-color: aqua;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  color: blue;
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 20px;
+  border: none;
+}
