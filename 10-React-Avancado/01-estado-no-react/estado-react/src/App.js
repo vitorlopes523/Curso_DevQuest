@@ -1,11 +1,11 @@
 import './App.css'
-import Painel from './components/painel/painel';
+import DeckOfCards from './components/deck-of-cards/deck-of-cards';
 
 function App() {
 
   return (
     <>
-    <Painel/>
+    <DeckOfCards/>
     </>
   )
 }
