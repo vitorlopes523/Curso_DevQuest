@@ -1,0 +1,20 @@
+{
+  "code": 200,
+  "status": "Ok",
+  "etag": "e52e95f71334d797c3c2d0cf144bcc3e611718db",
+  "data": {
+	"offset": 0,
+	"limit": 20,
+	"total": 1,
+	"count": 1,
+	"results": [
+      {
+        "id": 1009165,
+        "name": "Avengers",
+        "description": "Earth's Mightiest Heroes joined forces to take on threats that were too big for any one hero to tackle. With a roster that has included Captain America, Iron Man, Ant-Man, Hulk, Thor, Wasp and dozens more over the years, the Avengers have come to be regarded as Earth's No. 1 team.",
+        "genero": "Ação"
+    
+      }
+	  ]
+  }
+}
