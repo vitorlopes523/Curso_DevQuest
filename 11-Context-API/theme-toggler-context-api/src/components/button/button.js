@@ -3,11 +3,10 @@ import { ThemeContext } from "../../contexts/theme-context"
 
 export const Button = (props) => {
 
-  const { themes } = useContext(ThemeContext)
-
-  console.log('button theme', themes)
+  const { theme } = useContext(ThemeContext)
+  console.log(theme)
 
   return (
-    <button {...props} />
+    <button {...props} style={{ color: theme.color, background: theme.background }}/>
   )
 }
