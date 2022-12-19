@@ -1,4 +1,6 @@
+import React from 'react'
 import { useState, useEffect } from 'react'
+import Form from '../forms/form'
 
 async function createDeck() {
   const response = await fetch(
@@ -10,9 +12,23 @@ async function createDeck() {
 
 async function getCards(deckId) {
   const response = await fetch(
-    `https://deckofcardsapi.com/api/deck/${deckId}/draw/?count=52`
+    `https://deckofcardsapi.com/api/deck/${deckId}/draw/?count=1`
   )
   return await response.json()
+}
+
+const CardList = (props) => {
+  return (
+    <ul>
+        {props.cards.map((card, index) => {
+          return (
+            <li key={index}>
+              <img src={card.image} alt={card.value} />
+            </li>
+          )
+        })}
+      </ul>
+  )
 }
 
 const DeckOfCards = () => {
@@ -32,52 +48,18 @@ const DeckOfCards = () => {
     fetchData()
   }, [])
 
+  const addCard = (newCard) => {
+    setDeck({
+      cards: [...deck.cards, newCard]
+    })
+  }
+
   return (
     <section>
-      <ul>
-        {deck.cards.map((card, index) => {
-          return (
-            <li key={index}>
-              <img src={card.image} alt={card.value} />
-            </li>
-          )
-        })}
-      </ul>
+        <Form addCard={addCard} />
+       {deck.cards.length > 0 ? <CardList cards={deck.cards} /> : "Nenhuma carta encontrada"} 
     </section>
   )
-  // constructor() {
-  //     super()
-  //     this.state = {
-  //       cards: []
-  //     }
-  // }
-
-  // async componentDidMount() {
-  //   const deckId = await createDeck()
-  //   const data = await getCards(deckId)
-
-  //   this.setState({
-  //     cards: data.cards
-  //   })
-  // }
-
-  // render() {
-  //   return (
-  //       <section>
-  //           <ul>
-  //               {
-  //                 this.state.cards.map((card, index) => {
-  //                   return (
-  //                     <li key={index}>
-  //                         <img src={card.image} alt={card.value} />
-  //                     </li>
-  //                   )
-  //                 })
-  //               }
-  //           </ul>
-  //       </section>
-  //   )
-  // }
 }
 
 export default DeckOfCards
